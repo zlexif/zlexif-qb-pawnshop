@@ -2,11 +2,11 @@
 join **[Discord] https://discord.gg/XAV4AfgQaZ** |
 
 # Required
-[qb-core](https://github.com/qbcore-framework/qb-core)
-[qb-management](https://github.com/qbcore-framework/qb-management)
-[qb-target](https://github.com/qbcore-framework/qb-target)
-[qb-input](https://github.com/qbcore-framework/progressbar)
-[qb-menu](https://github.com/qbcore-framework/qb-menu)
+- [qb-core](https://github.com/qbcore-framework/qb-core)
+- [qb-management](https://github.com/qbcore-framework/qb-management)
+- [qb-target](https://github.com/qbcore-framework/qb-target)
+- [qb-input](https://github.com/qbcore-framework/progressbar)
+- [qb-menu](https://github.com/qbcore-framework/qb-menu)
 
 # Drag The Bike Image from the folder [images] to your qb-inventory/html/images
 
