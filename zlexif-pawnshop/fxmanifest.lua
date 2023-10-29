@@ -1,6 +1,6 @@
 fx_version 'cerulean'
-author '# Ahmad / ranjit'
-Description 'A vanilla unicorn job script edited by ahmad.'
+author '# Ahmad'
+Description 'A pawn shop job script by ahmad.'
 game 'gta5'
 
 shared_scripts { 
