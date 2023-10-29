@@ -15,7 +15,7 @@ join **[Discord] https://discord.gg/XAV4AfgQaZ** |
     ['bike']                            = {['name'] = 'bike',                              ['label'] = 'Bike',                      ['weight'] = 10000,        ['type'] = 'item',         ['image'] = 'bike.png',                   ['unique'] = true,          ['useable'] = true,      ['shouldClose'] = false,      ['combinable'] = nil,   ['description'] = 'A deployable bike...'},
 ```
 # IF YOU WANT THE BIKE TO ACTUALLY FUNCTION AND BE DEPLOYABLE ADD THIS TO
-#qb-smallresources/client/consumables.lua
+# qb-smallresources/client/consumables.lua
 ```
 RegisterNetEvent('consumables:client:bike', function(itemName)
     local ped = PlayerPedId()
