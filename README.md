@@ -7,6 +7,7 @@ join **[Discord] https://discord.gg/XAV4AfgQaZ** |
 - [qb-target](https://github.com/qbcore-framework/qb-target)
 - [qb-input](https://github.com/qbcore-framework/progressbar)
 - [qb-menu](https://github.com/qbcore-framework/qb-menu)
+- [mlo](https://drive.google.com/file/d/1eZs2_fVmbyJRw9Lvx3XNPFpWjA0SiAMW/view)
 
 # Drag The Bike Image from the folder [images] to your qb-inventory/html/images
 
