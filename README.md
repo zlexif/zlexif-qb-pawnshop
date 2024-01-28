@@ -30,17 +30,13 @@ RegisterNetEvent('consumables:client:bike', function(itemName)
     }, {}, {}, {}, function() -- Done
         ClearPedTasks(PlayerPedId())
 
-        -- Remove the bike item from the player's inventory
         TriggerServerEvent("QBCore:Server:RemoveItem", itemName, 1)
         TriggerEvent("QBCore:Notify", "Bike deployed!", "success")
 
-        -- Added: Display notification and ensure removal
         TriggerEvent("inventory:client:ItemBox", QBCore.Shared.Items[itemName], "remove")
 
-        -- Cancel the animation
         TriggerEvent('animations:client:EmoteCommandStart', {"c"})
 
-        -- Create the bike
         local bikeModel = GetHashKey("bmx")
         local pedCoords = GetEntityCoords(ped)
         local bikeCoords = vector3(pedCoords.x + 2, pedCoords.y, pedCoords.z)
@@ -52,7 +48,6 @@ RegisterNetEvent('consumables:client:bike', function(itemName)
         local bike = CreateVehicle(bikeModel, bikeCoords.x, bikeCoords.y, bikeCoords.z, 0.0, true, false)
         TaskWarpPedIntoVehicle(ped, bike, -1)
 
-        -- Give the keys for the bike
         TriggerEvent('vehiclekeys:client:SetOwner', GetVehicleNumberPlateText(bike))
     end)
 end)
