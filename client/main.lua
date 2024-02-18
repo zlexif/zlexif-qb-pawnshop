@@ -496,12 +496,10 @@ end
 
 function Craft(craftItem)
     local function proceedWithCrafting()
-        -- Progress bar and crafting logic
         QBCore.Functions.Progressbar('Craft', Language.Progressbars.Make..Config.Crafting[craftItem].label, 15000, false, false, {
             disableMovement = true, disableCarMovement = true, disableMouse = false, disableCombat = true,
         }, { animDict = "mini@repair", anim = "fixing_a_ped", }, {}, {}, function()
             CustomNotify(Language.Notify.Made..Config.Crafting[craftItem].label, 'success', 5000)
-            -- Corrected TriggerServerEvent to include item hash and materials
             TriggerServerEvent('zlexif-pawn:server:Craft', Config.Crafting[craftItem].hash, Config.Crafting[craftItem].materials)
             ClearPedTasks(PlayerPedId())
         end, function() -- Cancel
@@ -510,7 +508,6 @@ function Craft(craftItem)
         end)
     end
     if Config.CraftingSettings.UseMinigame then
-        -- Minigame selection based on configuration
         if Config.CraftingSettings.MinigameType == 'Circle' then
             exports['ps-ui']:Circle(function(success)
                 if success then proceedWithCrafting() else print("Minigame failed") end
@@ -531,7 +528,6 @@ function Craft(craftItem)
             print("Invalid Minigame Type Configured.")
         end
     else
-        -- Directly proceed with crafting if minigames are not used
         proceedWithCrafting()
     end
 end
