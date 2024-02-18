@@ -13,7 +13,6 @@ AddEventHandler('zlexif-pawn:server:Craft', function(itemHash, materials)
     local player = QBCore.Functions.GetPlayer(src)
     if player then
         local canCraft = true
-        -- Check if player has all materials
         for _, material in ipairs(materials) do
             if not player.Functions.GetItemByName(material.item) or player.Functions.GetItemByName(material.item).amount < material.amount then
                 canCraft = false
