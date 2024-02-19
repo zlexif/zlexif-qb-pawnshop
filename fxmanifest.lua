@@ -4,7 +4,7 @@ Description 'A pawn shop job script by ahmad.'
 game 'gta5'
 
 shared_scripts { 
-    "configs/**.lua",
+    "config/**.lua",
 }
 
 server_script { 
